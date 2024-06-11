@@ -11,7 +11,8 @@ years = df.index.str.split('-').str[0].unique()
 years = sorted(years)  # 연도를 오름차순으로 정렬
 
 # streamlit 앱 제목 설정
-st.title('🤖 예시 ㅣ 부산 시의 대표 감염병 환자 수 예측')
+st.title('🤖 예시')
+st.header('수도권 감염자 수 예측')
 
 # 연도 선택 위젯
 selected_index = st.select_slider('연도 선택', options=range(len(years)), format_func=lambda x: years[x])
